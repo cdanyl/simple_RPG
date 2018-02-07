@@ -323,7 +323,7 @@ Transform:
   - {fileID: 846881862}
   - {fileID: 1666420321}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &131551880
 Prefab:
@@ -407,6 +407,10 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 5dc0aab3aa1f6574fa89d0a18579f53a, type: 3}
   m_PrefabInternal: {fileID: 131551880}
+--- !u!1 &235433418 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 18d9e12d42131514b88d9b8614d57fc7, type: 3}
+  m_PrefabInternal: {fileID: 1093152069}
 --- !u!1001 &293003761
 Prefab:
   m_ObjectHideFlags: 0
@@ -688,7 +692,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.47000003, y: 43.057487}
+  m_AnchoredPosition: {x: -0.47000003, y: 47.6}
   m_SizeDelta: {x: -287.5, y: -60.525}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &374815588
@@ -1002,7 +1006,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 21.245, y: -119.94401, z: 0}
 --- !u!114 &422012304
 MonoBehaviour:
@@ -1779,7 +1783,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &731295641
 MonoBehaviour:
@@ -1792,6 +1796,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de67ef7c7e243d54bab83a036932d364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: Bartz
+  Dialogue:
+  - There is a cave up there. Many talked about horrors
+  - As you proceed further into the cave, you see a small glowing object
+  - Listen, and listen well. You four are the chosen ones, the warriors of light...bearers
+    of the four crystal essences.
 --- !u!1001 &746985039
 Prefab:
   m_ObjectHideFlags: 0
@@ -1870,10 +1880,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: a00dd31d891ff50469014fc131852b9e, type: 3}
   m_PrefabInternal: {fileID: 746985039}
---- !u!1 &752907702 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100008, guid: 28a326458c3d25c4b9d5b2f014788401, type: 3}
-  m_PrefabInternal: {fileID: 534592292}
 --- !u!1001 &764065292
 Prefab:
   m_ObjectHideFlags: 0
@@ -2041,7 +2047,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 0.754, g: 0.46479452, b: 0.082630135, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 0.32
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2694,7 +2700,7 @@ Transform:
   - {fileID: 2146837148}
   - {fileID: 642503717}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1432124870
 GameObject:
@@ -2783,7 +2789,7 @@ RectTransform:
   m_Children:
   - {fileID: 13866086}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2883,6 +2889,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcdb519cd8607924481a20c09f3fb607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DialoguePanel: {fileID: 13866083}
+  ContinueButton: {fileID: 15589239}
+  DialogueText: {fileID: 623967886}
+  NameText: {fileID: 598584032}
 --- !u!4 &1479166640
 Transform:
   m_ObjectHideFlags: 0
@@ -2894,7 +2904,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1589297263
 Prefab:
@@ -3087,8 +3097,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1756155651 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100008, guid: 6fc44b1433b649546802219f8c93c5fd, type: 3}
+  m_PrefabInternal: {fileID: 642503716}
 --- !u!1 &1761003854
 GameObject:
   m_ObjectHideFlags: 0
@@ -3637,7 +3651,7 @@ Transform:
   m_LocalScale: {x: 0.22760637, y: 1.6350735, z: 0.4569606}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -52.453003, z: 0}
 --- !u!114 &1990740190
 MonoBehaviour:
@@ -3749,7 +3763,7 @@ Transform:
   m_Children:
   - {fileID: 1795074707}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!195 &2005014821
 NavMeshAgent:
@@ -3818,65 +3832,65 @@ MonoBehaviour:
   Hash2: []
   Hash3:
   - list:
-    - {fileID: 1479166638}
-    ActiveGameObject: {fileID: 1479166638}
+    - {fileID: 374815586}
+    ActiveGameObject: {fileID: 374815586}
   - list:
     - {fileID: 598584030}
     ActiveGameObject: {fileID: 598584030}
   - list:
-    - {fileID: 374815586}
-    ActiveGameObject: {fileID: 374815586}
-  - list:
-    - {fileID: 13866083}
-    ActiveGameObject: {fileID: 13866083}
-  - list:
-    - {fileID: 623967884}
-    ActiveGameObject: {fileID: 623967884}
-  - list:
-    - {fileID: 15589237}
-    ActiveGameObject: {fileID: 15589237}
-  - list:
-    - {fileID: 680057856}
-    ActiveGameObject: {fileID: 680057856}
-  - list:
     - {fileID: 1432124870}
     ActiveGameObject: {fileID: 1432124870}
   - list:
-    - {fileID: 1795074706}
-    ActiveGameObject: {fileID: 1795074706}
-  - list:
-    - {fileID: 1990740185}
-    ActiveGameObject: {fileID: 1990740185}
+    - {fileID: 1479166638}
+    ActiveGameObject: {fileID: 1479166638}
   - list:
     - {fileID: 731295636}
     ActiveGameObject: {fileID: 731295636}
   - list:
-    - {fileID: 121655077}
-    ActiveGameObject: {fileID: 121655077}
+    - {fileID: 235433418}
+    ActiveGameObject: {fileID: 235433418}
   - list:
-    - {fileID: 2040516032}
-    ActiveGameObject: {fileID: 2040516032}
+    - {fileID: 623967884}
+    ActiveGameObject: {fileID: 623967884}
   - list:
-    - {fileID: 752907702}
-    ActiveGameObject: {fileID: 752907702}
-  - list:
-    - {fileID: 1188041505}
-    ActiveGameObject: {fileID: 1188041505}
-  - list:
-    - {fileID: 2005014819}
-    ActiveGameObject: {fileID: 2005014819}
-  - list:
-    - {fileID: 422012299}
-    ActiveGameObject: {fileID: 422012299}
-  - list:
-    - {fileID: 1426440400}
-    ActiveGameObject: {fileID: 1426440400}
+    - {fileID: 13866083}
+    ActiveGameObject: {fileID: 13866083}
   - list:
     - {fileID: 1721536269}
     ActiveGameObject: {fileID: 1721536269}
   - list:
+    - {fileID: 680057856}
+    ActiveGameObject: {fileID: 680057856}
+  - list:
     - {fileID: 846881860}
     ActiveGameObject: {fileID: 846881860}
+  - list:
+    - {fileID: 1990740185}
+    ActiveGameObject: {fileID: 1990740185}
+  - list:
+    - {fileID: 2040516032}
+    ActiveGameObject: {fileID: 2040516032}
+  - list:
+    - {fileID: 1756155651}
+    ActiveGameObject: {fileID: 1756155651}
+  - list:
+    - {fileID: 0}
+    ActiveGameObject: {fileID: 0}
+  - list:
+    - {fileID: 0}
+    ActiveGameObject: {fileID: 0}
+  - list:
+    - {fileID: 0}
+    ActiveGameObject: {fileID: 0}
+  - list:
+    - {fileID: 0}
+    ActiveGameObject: {fileID: 0}
+  - list:
+    - {fileID: 0}
+    ActiveGameObject: {fileID: 0}
+  - list:
+    - {fileID: 0}
+    ActiveGameObject: {fileID: 0}
   Hash4: []
   Hash5: []
   Hash6: []
@@ -3896,7 +3910,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2146837147
 Prefab:
